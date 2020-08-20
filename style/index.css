@@ -1,0 +1,292 @@
+/* Add CSS styling here */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/*
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+*/
+/*
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+*/
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+body{
+   font-family: 'Merriweather Sans', sans-serif;
+   background-color:black;
+   color: white;
+   margin: 1%;
+}
+
+
+.div1{
+display: flex;
+justify-content: space-between;
+align-content: center;
+background-color: #0b0c10;
+width: 100%;
+}
+
+.nav1{
+display:flex;
+justify-content: space-between;
+}
+
+.name{
+    color: #45a29e;
+    font-family: 'Raleway', sans-serif;
+    font-size: 2rem;
+    padding: 0 10px;
+    border-left: double  #45a29e 2px;
+    text-align: center;
+     
+}
+
+button{
+    background-color: black;
+    border: 0;
+    color: #45a29e;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+}
+button:hover{
+    background-color: #1F2833;
+}
+.projdiv{
+height: 23rem;
+
+position: relative;
+width: 100%;
+}
+
+.projb{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #0b0c10;
+    color: #45a29e;
+    font-size: 16px;
+    padding: 16px 30px;
+    border: 1px solid #66fcf1;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center; 
+}
+
+.imgd{
+    background-color: #0b0c10;
+    height: 25rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: center;
+    align-items: center;
+}   
+footer{
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    align-content:center ;
+    align-items: center;
+}
+.footbutton{
+    border: 1px solid #66fcf1;
+}
+
+.bodyp{
+    background-image: url(https://cdn.pixabay.com/photo/2016/10/22/01/54/wood-1759566_960_720.jpg);
+}
+.projimg img{
+    height: 400px;
+    width: 400px;
+    margin: 20px;
+}
+.projimg{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-evenly;
+   align-content: space-between;
+   align-items: flex-start;
+}
+
+/*-----------------------------------------------------------------ABOUT PAGE-----------------------------------------------*/
+.divab{
+ color: #66fcf1;
+ font-size: 2rem;
+display: flex;
+justify-content: space-between;
+}
+
+
+.divab p{
+    width: 75%;
+}
+.divab img{
+    width: 400px;
+    height:400px;
+    border-radius: 50%;
+}
+
+/*---------------------------------------------------CONTACT PAGE---------------------------------------------------------*/
+.divct{
+    height: auto;
+    width: auto;
+    text-align: center;
+    margin: 0 10px;
+    color: #66fcf1;
+    
+}
+
+.divct h2{
+    font-size: 2rem;
+   padding: 1.5rem 8rem;
+}
+
+.divct button{
+    background-color: #0b0c10;
+    border: solid 1px;
+    color: #45a29e;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+}
+/*------------------------------------------media queries------------------------------------------------------------------------------*/
+
+@media (max-width:800px){
+    body{
+     padding: 1.875rem;
+    }
+   
+    .imgd{
+      height: 43.75rem;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-content: center; 
+    }
+    .imgd img{
+      height: 35%;
+      width: 20%;
+      padding: 0.625rem;
+    }
+    .projimg{
+        height: auto;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-content: center;
+    }
+    .divab{
+        height: auto;
+        width: auto;
+    }
+    .divab p{
+        width: auto;
+        font-size: 1rem;
+        padding: 30px 0
+    }
+    .divab img{
+        display: none;
+    }
+    .divct{
+        height: auto;
+        width: auto;
+    }
+    .divct p{
+        font-size: 25px;
+        text-align: center;
+    }
+    .form{
+       display: flex;
+       justify-content: center;
+    }
+    }
+
+    @media(max-width:500px){
+    
+    .div1{
+      width: auto;
+      height: auto;
+      flex-direction: column;
+      align-items: center;
+    }
+    .nav1{
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .imgd{
+      height: auto;
+      flex-direction: row;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      align-items: center;
+      align-content: center;
+    }
+    
+    .imgd img{
+      width: 30%;
+      height: 30%; 
+    }
+    .projimg{
+        height: auto;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        align-items: center;
+        align-content: center; 
+    }
+    .projimg img{
+     width: 30%;
+     height: 30%; 
+    }
+    .divct{
+        height: auto;
+        width: auto;
+    }
+
+    .divct p{
+        font-size: 1rem;
+       padding: 1.5rem 8rem;
+  }
+}
