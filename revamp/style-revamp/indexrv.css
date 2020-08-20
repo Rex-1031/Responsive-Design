@@ -48,50 +48,51 @@ table {
 */
 html{
     font-size: 62.5%;
+    box-sizing: border-box;
 }
 body{
    font-family: 'Merriweather Sans', sans-serif;
-   background-color: #0b0c10;
-   color: #C5C6C7;
+   background-color:black;
+   color: white;
    margin: 1%;
 }
 
 
 .div1{
-display: flex;
-justify-content: space-between;
-align-content: center;
-background-color: #0b0c10;
+background-color: black;
 width: 100%;
 }
 
 .nav1{
-display:flex;
-justify-content: space-between;
+font-size: 2rem;
+display: flex;
+justify-content: space-evenly;
+
+
+}
+
+.nav1 a{
+    color: white;
+    text-decoration: none;
 }
 
 .name{
-    color: #66fcf1;
+    color: #45a29e;
     font-family: 'Raleway', sans-serif;
     font-size: 4rem;
-    padding: 0 10px;
+    text-align: center;
      
 }
 
-button{
-    background-color: #0b0c10;
-    border: 0;
-    color: #45a29e;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
+.main-area{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
-button:hover{
-    background-color: #1F2833;
-}
+
 .projdiv{
 height: 23rem;
-background-image: url(https://cdn.pixabay.com/photo/2016/10/22/01/54/wood-1759566_960_720.jpg) ;  
+
 position: relative;
 width: 100%;
 }
@@ -113,7 +114,7 @@ width: 100%;
 }
 
 .imgd{
-    background-color: #0b0c10;
+    background-color: black;
     height: 25rem;
     display: flex;
     flex-direction: row;
@@ -131,7 +132,7 @@ footer{
 .footbutton{
     border: 1px solid #66fcf1;
 }
-/* ----------------------------------------------------------------- PROJECT PAGE----------------------------------------------------------*/
+
 .bodyp{
     background-image: url(https://cdn.pixabay.com/photo/2016/10/22/01/54/wood-1759566_960_720.jpg);
 }
